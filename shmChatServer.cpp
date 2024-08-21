@@ -37,7 +37,7 @@ int listenfd;
 int shmfd;
 char* share_mem = nullptr;
 client_data* users = nullptr;
-int * sub_process = 0;
+int * sub_process = nullptr;
 
 int user_count = 0;
 bool stop_child = false;
@@ -397,3 +397,4 @@ int main(int argc, char* argv[])
         return 0;
     }   
 }
+
